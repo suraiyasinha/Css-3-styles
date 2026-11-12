@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        @keyframes balls {
+            from{
+                left: 0px;
+
+            }
+            to{
+                left: 560px;
+            }
+        }
+        @keyframes balls-2 {
+            from{
+                right: 0px;
+
+            }
+            to{
+            right: 560px;
+            }
+        
+        }
+        .box{
+            margin: 100px;
+            width: 600px;
+            height: 550px;
+            background-color: aquamarine;
+            border: 10px solid whitesmoke;
+            box-shadow: 5px 5px 5px 5px ;
+            display: flex;
+            justify-content: space-between;
+        }
+        .ball{
+            width: 40px;
+            height:40px;
+            background-color:whitesmoke;
+            border: 1px solid silver;
+            margin-top: 7px;
+            border-radius:50% ;
+
+        }
+        .div-1> .ball{
+            margin-bottom: 28px;
+            position: relative;
+            animation:balls 2s  2s 5 alternate ;
+        }
+        .div-2> .ball{
+            margin-top: 26px;
+             position: relative;
+            animation:balls-2 2s  2s 5 alternate ;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="div-1">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        </div>
+        <div class="div-2">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        </div>
+    </div>
+    
+   
+    
+</body>
+</html>
